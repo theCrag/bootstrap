@@ -47,6 +47,7 @@ a:focus {
 
 a:hover,
 a:active {
+  text-decoration: none;
   outline: 0;
 }
 
@@ -172,8 +173,9 @@ a {
 }
 
 a:hover {
-  color: #004190;
-  text-decoration: underline;
+  color: white;
+  text-decoration: none;
+  background: #0061d7;
 }
 
 .img-rounded {
@@ -1864,7 +1866,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .btn-link:hover {
-  color: #004190;
+  color: #0061d7;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -2408,8 +2410,8 @@ input[type="submit"].btn.btn-mini {
 }
 
 .nav .dropdown-toggle:hover .caret {
-  border-top-color: #004190;
-  border-bottom-color: #004190;
+  border-top-color: #0061d7;
+  border-bottom-color: #0061d7;
 }
 
 /* move down carets for tabs */
