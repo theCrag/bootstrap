@@ -38,6 +38,7 @@ build:
 	@echo "${HR}\n"
 	@echo "Thanks for using Bootstrap,"
 	@echo "<3 @mdo and @fat\n"
+	@./make.sh
 
 #
 # RUN JSHINT & QUNIT TESTS IN PHANTOMJS
