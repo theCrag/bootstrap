@@ -19,6 +19,7 @@ build:
 	@jshint js/tests/unit/*.js --config js/.jshintrc
 	@echo "Running JSHint on javascript...             ${CHECK} Done"
 	@recess --compile ${BOOTSTRAP_LESS} > ${BOOTSTRAP}
+	@recess --compile less/just-forms.less > ./docs/assets/css/bootstrap-forms.css
 	@recess --compile ${BOOTSTRAP_RESPONSIVE_LESS} > ${BOOTSTRAP_RESPONSIVE}
 	@echo "Compiling LESS with Recess...               ${CHECK} Done"
 	@node docs/build
