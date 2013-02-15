@@ -12,6 +12,7 @@ mkdir -p $DIR/img
 cp docs/assets/css/bootstrap.css $DIR/css
 cp docs/assets/css/bootstrap-responsive.css $DIR/css
 cp docs/assets/css/bootstrap-forms.css $DIR/css
+cp docs/assets/js/bootstrap.js $DIR/js
 cp img/* $DIR/img
 
 
