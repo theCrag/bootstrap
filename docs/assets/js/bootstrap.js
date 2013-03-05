@@ -310,6 +310,7 @@
    * =================================== */
 
   $(document)
+    .on('touchstart.dropdown.data-api', '.dropdown-submenu a', function(e) { e.stopPropagation(); window.location = $(e.target).attr('href'); })
     .on('click.dropdown.data-api', clearMenus)
     .on('click.dropdown.data-api', '.dropdown form', function (e) { e.stopPropagation() })
     .on('click.dropdown-menu', function (e) { e.stopPropagation() })
