@@ -3,11 +3,12 @@
 
 # run make FIRST
 
-DIR="../../static/bootstrap/2.1.1-c4"
+DIR="../../static/bootstrap/2.1.1-c5"
 
 mkdir -p $DIR
 mkdir -p $DIR/css
 mkdir -p $DIR/img
+mkdir -p $DIR/js
 
 cp docs/assets/css/bootstrap.css $DIR/css
 cp docs/assets/css/bootstrap-responsive.css $DIR/css
