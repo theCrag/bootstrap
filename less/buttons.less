@@ -170,7 +170,11 @@ input[type="button"] {
 .btn-inverse {
   .buttonBackground(@btnInverseBackground, @btnInverseBackgroundHighlight);
 }
-
+.btn-flat,
+.btn-flat:hover {
+  background: white;
+  color: @linkColor;
+}
 
 // Cross-browser Jank
 // --------------------------------------------------
