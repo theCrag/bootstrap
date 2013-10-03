@@ -3,7 +3,7 @@
 
 # run make FIRST
 
-DIR="../../static/bootstrap/2.1.1-c6"
+DIR="../../static/bootstrap/2.1.1-c7"
 
 mkdir -p $DIR
 mkdir -p $DIR/css
