@@ -14,6 +14,7 @@ cp -p docs/assets/css/bootstrap.css $DIR/css
 cp -p docs/assets/css/bootstrap-responsive.css $DIR/css
 cp -p docs/assets/css/bootstrap-forms.css $DIR/css
 cp -p docs/assets/js/bootstrap.js $DIR/js
+cp -p docs/assets/js/bootstrap.min.js $DIR/js
 cp -p img/* $DIR/img
 
 
