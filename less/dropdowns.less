@@ -78,7 +78,7 @@
   }
 
   // Links within the dropdown menu
-  a {
+  li > a {
     display: block;
     padding: 3px 20px;
     clear: both;
@@ -86,6 +86,9 @@
     line-height: @baseLineHeight;
     color: @dropdownLinkColor;
     white-space: nowrap;
+  }
+  li.nolink {
+    padding: 3px 20px;
   }
 }
 
