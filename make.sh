@@ -1,22 +1,17 @@
-# a useless commen
-# this just cherry picks stuff to deploy into the static files
-
-# run make FIRST
-
-DIR="../../static/bootstrap/2.1.1-c7"
-
-mkdir -p $DIR
-mkdir -p $DIR/css
-mkdir -p $DIR/img
-mkdir -p $DIR/js
-
-cp -p docs/assets/css/bootstrap.css $DIR/css
-cp -p docs/assets/css/bootstrap-responsive.css $DIR/css
-cp -p docs/assets/css/bootstrap-forms.css $DIR/css
-cp -p docs/assets/js/bootstrap.js $DIR/js
-cp -p docs/assets/js/bootstrap.min.js $DIR/js
-cp -p img/* $DIR/img
+# THIS replaces the original Makefile
 
 
+# These two files are now @import'ed directly into portal.css
+#cp -p docs/assets/css/bootstrap.css $DIR/css
+#cp -p docs/assets/css/bootstrap-responsive.css $DIR/css
+
+# This one is @imported into a wrapper bootstrap-forms.css in the main css dir
+#cp -p docs/assets/css/bootstrap-forms.css $DIR/css
+
+
+
+cat js/bootstrap-transition.js js/bootstrap-button.js js/bootstrap-dropdown.js js/bootstrap-modal.js  > js/bootstrap.js
+
+#cp -p docs/assets/js/bootstrap.js $DIR/js
 
 
