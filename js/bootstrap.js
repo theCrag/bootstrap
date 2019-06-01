@@ -210,6 +210,7 @@
 
         var $menu = $parent.find('.dropdown-menu');
         if ($menu.hasClass('pull-right')) {
+          $menu.css('max-width', window.innerWidth-8);
           var left = $menu.offset().left;
           if (left < 0) {
             $menu.css('right', (left-4) + 'px')
@@ -270,6 +271,7 @@
       var $parent = getParent($(this));
       $parent.removeClass('open');
       var $menu = $parent.find('.dropdown-menu');
+      $menu.css('max-width', '');
       $menu.css('right', '');
 
     })
