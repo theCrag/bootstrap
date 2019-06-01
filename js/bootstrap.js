@@ -207,6 +207,14 @@
 
       if (!isActive) {
         $parent.toggleClass('open')
+
+        var $menu = $parent.find('.dropdown-menu');
+        if ($menu.hasClass('pull-right')) {
+          var left = $menu.offset().left;
+          if (left < 0) {
+            $menu.css('right', (left-4) + 'px')
+          }
+        }
       }
 
       $this.focus()
@@ -259,7 +267,11 @@
 
   function clearMenus() {
     $(toggle).each(function () {
-      getParent($(this)).removeClass('open')
+      var $parent = getParent($(this));
+      $parent.removeClass('open');
+      var $menu = $parent.find('.dropdown-menu');
+      $menu.css('right', '');
+
     })
   }
 
