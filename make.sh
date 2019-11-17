@@ -9,8 +9,12 @@
 #cp -p docs/assets/css/bootstrap-forms.css $DIR/css
 
 
+rm js/bootstrap.js
 
-cat js/bootstrap-transition.js js/bootstrap-button.js js/bootstrap-dropdown.js js/bootstrap-modal.js  > js/bootstrap.js
+cat js/bootstrap-transition.js  >> js/bootstrap.js
+cat js/bootstrap-button.js      >> js/bootstrap.js
+cat js/bootstrap-dropdown.js    >> js/bootstrap.js
+cat js/bootstrap-modal.js       >> js/bootstrap.js
 
 #cp -p docs/assets/js/bootstrap.js $DIR/js
 

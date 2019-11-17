@@ -18,7 +18,7 @@
  * ========================================================== */
 
 
-!function ($) {
+var dud = function ($) {
 
   $(function () {
 
@@ -57,7 +57,10 @@
 
   })
 
-}(window.jQuery);/* ============================================================
+}(window.jQuery);
+
+
+/* ============================================================
  * bootstrap-button.js v2.1.1
  * http://twitter.github.com/bootstrap/javascript.html#buttons
  * ============================================================
@@ -77,7 +80,7 @@
  * ============================================================ */
 
 
-!function ($) {
+var dud = function ($) {
 
   "use strict"; // jshint ;_;
 
@@ -152,7 +155,8 @@
     })
   })
 
-}(window.jQuery);/* ============================================================
+}(window.jQuery);
+/* ============================================================
  * bootstrap-dropdown.js v2.3.1
  * http://twitter.github.com/bootstrap/javascript.html#dropdowns
  * ============================================================
@@ -172,7 +176,7 @@
  * ============================================================ */
 
 
-!function ($) {
+var dud = function ($) {
 
   "use strict"; // jshint ;_;
 
@@ -352,7 +356,7 @@
  * ========================================================= */
 
 
-!function ($) {
+var dud = function ($) {
 
   "use strict"; // jshint ;_;
 
@@ -391,6 +395,7 @@
 
         this.backdrop(function () {
           var transition = $.support.transition && that.$element.hasClass('fade')
+          var offset = 0;
 
           if (!that.$element.parent().length) {
             that.$element.appendTo(document.body) //don't move modals dom position
@@ -400,7 +405,7 @@
             .show()
 
           if (transition) {
-            that.$element[0].offsetWidth // force reflow
+            offset = that.$element[0].offsetWidth // force reflow
           }
 
           that.$element
@@ -494,6 +499,7 @@
     , backdrop: function (callback) {
         var that = this
           , animate = this.$element.hasClass('fade') ? 'fade' : ''
+          , offset = 0;
 
         if (this.isShown && this.options.backdrop) {
           var doAnimate = $.support.transition && animate
@@ -505,7 +511,9 @@
             this.$backdrop.click($.proxy(this.hide, this))
           }
 
-          if (doAnimate) this.$backdrop[0].offsetWidth // force reflow
+          if (doAnimate) {
+            offset = this.$backdrop[0].offsetWidth // force reflow
+          }
 
           this.$backdrop.addClass('in')
 
@@ -523,6 +531,7 @@
         } else if (callback) {
           callback()
         }
+        return offset; // hack for less compiler
       }
   }
 
@@ -571,3 +580,5 @@
   })
 
 }(window.jQuery);
+
+
