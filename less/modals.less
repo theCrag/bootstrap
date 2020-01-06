@@ -50,7 +50,8 @@
     .transition(e('opacity .3s linear, top .3s ease-out'));
     top: -25%;
   }
-  &.fade.in { top: 50%; }
+  // &.fade.in { top: 25%; }
+  &.fade.in { top: 300px; }
 }
 .modal-header {
   padding: 9px 15px;
@@ -95,4 +96,10 @@
   .btn-group .btn + .btn {
     margin-left: -1px;
   }
+}
+
+// turn off modal background scrolling
+body.modal-open {
+  overflow: hidden;
+  position: fixed;
 }
